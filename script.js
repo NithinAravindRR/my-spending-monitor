@@ -60,7 +60,7 @@ function renderExpenses() {
   
       expenses.forEach(expense => {
            const expenseMonth = expense.date.substring(0, 7);
-           if (expenseMonth === selectedMonth && (selectedCategory === 'All' || expense.category === selectedCategory)) {
+           if (expenseMonth === selectedMonth && (selectedCategory === 'All' || expenseCategory === selectedCategory)) {
 
                const row = `<tr>
                     <td>${expense.date}</td>
