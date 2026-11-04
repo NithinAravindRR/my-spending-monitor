@@ -5,8 +5,12 @@ body {
       background-color: #f4f7f6;
       margin: 0;
       padding: 40px 20px;
+      overflow-x: auto;           
+      width: 100%;
 }
 .container {
+      display: flex;
+      justify-content: center;
       max-width: 650px;
       margin: 0 auto;
       background: white;
