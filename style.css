@@ -4,12 +4,9 @@ body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background-color: #f4f7f6;
       margin: 0;
-      padding: 40px 20px;
-      overflow-x: auto;           
+      padding: 40px 20px;          
 }
 .container {
-      display: flex;
-      justify-content: center;
       max-width: 650px;
       margin: 0 auto;
       background: white;
