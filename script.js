@@ -44,10 +44,20 @@ function saveToLocalStorage() {
  }
 
 function deleteExpenses(targetId) {
-       expenses = expenses.filter(expense => expense.id !== targetId);
-       saveToLocalStorage();
-       renderExpenses();
+       const expenseToDelete = expenses.find(expense => expense.id === targetId);
+       const expenseName = expenseToDelete ? expenseToDelete.name : 'this expense';
+
+       const userConfirmed = confirm(`Are you sure you want to delete "${expenseName}"?`);
+
+       if (userConfirmed) {
+              expenses = expenses.filter(expense => expense.id !== targetId);
+              saveToLocalStorage();
+              renderExpenses();
+       }
+      
  }
+
+
 function renderExpenses() {
       const tableBody = document.getElementById('expenseTableBody');
       const selectedCategory = document.getElementById('filterCategory').value;
