@@ -10,7 +10,7 @@ body {
       justify-content: center;
       max-width: 650px;
       margin: 0 auto;
-      background: white;
+      background: grey;
       padding: 30px;
       border-radius: 12px;
       box-shadow: 0 4px 15px rgbd(0, 0, 0, 0.08);
