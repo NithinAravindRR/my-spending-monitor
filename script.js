@@ -44,18 +44,19 @@ function saveToLocalStorage() {
  }
 
 function deleteExpenses(targetId) {
-       const expenseToDelete = expenses.find(expense => expense.id === targetId);
+       const idToFind = Number(targetId);
+       
+       const expenseToDelete = expenses.find(expense => expense.id === idToFind);
        const expenseName = expenseToDelete ? expenseToDelete.name : 'this expense';
 
-       const userConfirmed = confirm(`Are you sure you want to delete "${expenseName}"?`);
+       const userConfirmed = window.confirm(`Are you sure you want to delete "${expenseName}"?`);
 
        if (userConfirmed) {
-              expenses = expenses.filter(expense => expense.id !== targetId);
+              expenses = expenses.filter(expense => expense.id !== idToFind);
               saveToLocalStorage();
               renderExpenses();
        }
-      
- }
+}
 
 
 function renderExpenses() {
