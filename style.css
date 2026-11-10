@@ -1,10 +1,11 @@
 CSS
 
-body {
+html, body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background-color: black;
       margin: 0;
-      padding: 40px 20px;          
+      padding: 0;          
+      min-height: 100vh;
 }
 .container {
       max-width: 650px;
