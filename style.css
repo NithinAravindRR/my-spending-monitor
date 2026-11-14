@@ -1,5 +1,9 @@
 CSS
 
+title {
+text-align: center;
+}
+
 html, body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background-color: black;
